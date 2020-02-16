@@ -14,7 +14,7 @@ read -s -p "Password: " password
 
 if [ "$password" == "" ]; then 
 	echo "Password can not be blank"
-	./password.sh
+	./login.sh
 else
 #saves the password in md5sum format in tmp.txt
 echo $password | md5sum > tmp.txt
